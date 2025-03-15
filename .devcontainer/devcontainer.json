@@ -1,0 +1,49 @@
+{
+	"name": "${localWorkspaceFolder}-devcontainer",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"target": "non-root"        //Use this on rootful Docker environments
+		//"target": "root"			//Use this on rootless Docker environments
+	},
+
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.cpptools-extension-pack",
+				"cschlosser.doxdocgen",
+				"xaver.clang-format"
+			]
+		}
+	},
+
+	"mounts": [
+		// default ssh keys and configs folder
+		{
+			"source": "${localEnv:HOME}/.ssh/",
+			"target": "${containerEnv:HOME}/.ssh/",
+			"type": "bind"
+		}
+		// system gitconfig
+		// ,{
+		// 	"source": "/etc/gitconfig",
+		// 	"target": "/etc/gitconfig",
+		// 	"type": "bind"
+		// }
+		// user gitconfig
+		,{
+			"source": "${localEnv:HOME}/.gitconfig",
+			"target": "${containerEnv:HOME}/.gitconfig",
+			"type": "bind"
+		}
+		// global gitignore
+		// ,{
+		// 	"source": "${localEnv:HOME}/.gitignore",
+		// 	"target": "${containerEnv:HOME}/.gitignore",
+		// 	"type": "bind"
+		// }
+	],
+
+	"workspaceMount": "source=${localWorkspaceFolder},target=${containerEnv:HOME}/workspace,type=bind",
+	"workspaceFolder": "${containerEnv:HOME}/workspace"
+}
