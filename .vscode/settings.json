@@ -1,4 +1,19 @@
 {
+    "cmake.options.advanced": {
+        "folder": {
+            "projectStatusVisibility": "hidden"
+        },
+        "ctest": {
+            "projectStatusVisibility": "hidden"
+        },
+        "cpack": {
+            "projectStatusVisibility": "hidden"
+        },
+        "workflow": {
+            "projectStatusVisibility": "hidden"
+        }
+    },
+    "C_Cpp.autoAddFileAssociations": true,
     "files.associations": {
         "array": "cpp",
         "atomic": "cpp",

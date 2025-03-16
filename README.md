@@ -2,7 +2,10 @@
 
 ***All the basics from the get-go***
 
+## Table of contents
+
 - [Universal C/C++ development container](#universal-cc-development-container)
+  - [Table of contents](#table-of-contents)
   - [About](#about)
   - [Features and Development tools](#features-and-development-tools)
   - [Setup](#setup)
@@ -37,7 +40,7 @@ project in a `Docker container`:
 3. Wait a bit for extension installation (a VSCode might show a warning about
    incorrect `tasks.json`. This is due to extensions being not yet installed -
    ignore)
-4. Check if `/example/src/main.cpp` builds and launches, and IntelliSense works
+4. Check if `/basic_example/src/main.cpp` builds and launches, and IntelliSense works
 
 ### Alternative (manual building and running)
 
@@ -57,8 +60,10 @@ since all development tools are hard-coded into it.
 
 - [x] Fix cpptools integration
 - [x] Add more tasks and launch configs
-- [ ] Use CMake
+- [x] Use `CMake`
+- [ ] Add an intermediate example, that could work only with `CMake` additional utility
 - [ ] Check, whether mounting ssh etc. could be a `feature`
-- [ ] Add LICENSE.md
-- [ ] Add `VCPKG` support
-- [ ] Finalize README.md
+- [ ] Add `LICENSE.md`
+- [ ] Add `vcpkg` support
+- [ ] Add an advanced example, that uses `vcpkg` and `GTest`
+- [ ] Finalize `README.md`

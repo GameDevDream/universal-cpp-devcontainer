@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 #include "vector_to_string.hpp"
+#include "pi.hpp"
 
 int main() {
     std::vector<int> v1{ 1, 2, 3 };
@@ -11,6 +12,8 @@ int main() {
     std::cout << example::to_string(v1) << '\n';
     std::cout << example::to_string(v2) << '\n';
     std::cout << example::to_string(v3) << '\n';
+
+    std::cout << example::pi << std::endl;
 
     return 0;
 }
