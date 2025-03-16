@@ -1,10 +1,10 @@
 {
     "configurations": [
         {
-            "name": "C/C++: g++ build and gdb debug active file",
+            "name": "C/C++: build and gdb debug active file",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/${relativeFileDirname}/${fileBasenameNoExtension}.out",
+            "program": "${workspaceFolder}/build/${fileBasenameNoExtension}.out",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}/build/",
@@ -18,7 +18,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "C/C++: g++ build active file",
+            "preLaunchTask": "${defaultBuildTask}",
             "miDebuggerPath": "/usr/bin/gdb"
         }
     ],

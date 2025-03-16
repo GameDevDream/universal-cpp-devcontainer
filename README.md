@@ -55,9 +55,10 @@ since all development tools are hard-coded into it.
 
 ## TODO
 
-- [ ] Fix cpptools integration
-- [ ] Add more tasks and launch configs
+- [x] Fix cpptools integration
+- [x] Add more tasks and launch configs
 - [ ] Use CMake
+- [ ] Check, whether mounting ssh etc. could be a `feature`
 - [ ] Add LICENSE.md
 - [ ] Add `VCPKG` support
 - [ ] Finalize README.md
