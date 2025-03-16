@@ -7,7 +7,7 @@ RUN touch /var/mail/ubuntu && \
 # Install basic utilities
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
-    apt-get install --no-install-recommends \
+    apt-get install -y --no-install-recommends \
 		bison \
         build-essential \
 		curl \
@@ -23,7 +23,7 @@ RUN apt-get update && \
 		wget \
 		zip
 # Setup git repository for apt
-RUN apt-get purge --auto-remove git && \
+RUN apt-get purge -y --auto-remove git && \
     add-apt-repository ppa:git-core/ppa
 # Setup kitware repository for apt
 RUN KEY=/usr/share/keyrings/kitware-archive-keyring.gpg && \
@@ -34,10 +34,10 @@ RUN KEY=/usr/share/keyrings/kitware-archive-keyring.gpg && \
 		tee /etc/apt/sources.list.d/kitware.list > /dev/null && \
 	apt-get update && \
 	rm $KEY && \
-    apt-get install kitware-archive-keyring
+    apt-get install -y kitware-archive-keyring
 # Use updated apt lists to install most recent versions of tools
 RUN apt-get update && \
-    apt-get install \
+    apt-get install -y \
 		clang \
 		clang-format \
 		cmake \

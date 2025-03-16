@@ -55,6 +55,9 @@ since all development tools are hard-coded into it.
 
 ## TODO
 
+- [ ] Fix cpptools integration
+- [ ] Add more tasks and launch configs
+- [ ] Use CMake
 - [ ] Add LICENSE.md
 - [ ] Add `VCPKG` support
 - [ ] Finalize README.md
