@@ -61,9 +61,9 @@ since all development tools are hard-coded into it.
 - [x] Fix cpptools integration
 - [x] Add more tasks and launch configs
 - [x] Use `CMake`
-- [ ] Add an intermediate example, that could work only with `CMake` additional utility
-- [ ] Check, whether mounting ssh etc. could be a `feature`
-- [ ] Add `LICENSE.md`
+- [x] Add an intermediate example, that could work only with `CMake` additional utility
 - [ ] Add `vcpkg` support
 - [ ] Add an advanced example, that uses `vcpkg` and `GTest`
+- [ ] Check, whether mounting `ssh` etc. could be a `feature`
+- [ ] Add `LICENSE.md`
 - [ ] Finalize `README.md`

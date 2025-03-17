@@ -1,4 +1,5 @@
 {
+    "editor.formatOnSave": true,
     "cmake.options.advanced": {
         "folder": {
             "projectStatusVisibility": "hidden"

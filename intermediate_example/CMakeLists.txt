@@ -10,5 +10,5 @@ project(ucc_root VERSION 1.0.0)
 # set(CMAKE_CXX_FLAGS "-D_GLIBCXX_USE_CXX11_ABI=1")
 # add_compile_options(-fPIC)
 
-add_subdirectory("basic_example")
-add_subdirectory("intermediate_example")
+add_subdirectory("exe")
+add_subdirectory("lib")

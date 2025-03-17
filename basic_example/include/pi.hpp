@@ -1,4 +1,5 @@
 #pragma once
-namespace example{
-static constexpr double pi{ 3.1415 };
+namespace example {
+static constexpr long double pi{
+    3.14159265358979323846264338327950288419716939937510582097494459230781640628620899L};
 }
