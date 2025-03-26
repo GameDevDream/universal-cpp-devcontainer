@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.23.0)
 
-project(intermediate_example VERSION 1.0.0)
+project(advanced_example VERSION 1.0.0)
 
 # if(NOT CMAKE_BUILD_TYPE)
 #   set(CMAKE_BUILD_TYPE Release)
@@ -12,3 +12,4 @@ project(intermediate_example VERSION 1.0.0)
 
 add_subdirectory("exe")
 add_subdirectory("lib")
+add_subdirectory("test")

@@ -12,3 +12,4 @@ project(ucc_root VERSION 1.0.0)
 
 add_subdirectory("basic_example")
 add_subdirectory("intermediate_example")
+add_subdirectory("advanced_example")

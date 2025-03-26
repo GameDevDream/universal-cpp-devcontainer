@@ -1,11 +1,11 @@
 cmake_minimum_required( VERSION 3.23.0 )
 
-project( intermediate_example_exe VERSION 1.0.0 )
+project( advanced_example_test VERSION 1.0.0 )
 
-add_executable( intermediate )
+add_executable( test_advanced )
 
 target_sources(
-  intermediate
+  test_advanced
 
   PRIVATE FILE_SET HEADERS
     BASE_DIRS
@@ -20,8 +20,8 @@ target_sources(
 )
 
 target_link_libraries(
-  intermediate
+  test_advanced
 
   PRIVATE
-    intermediate_lib
+    advanced_lib
 )
