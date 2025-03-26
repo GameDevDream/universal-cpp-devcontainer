@@ -2,10 +2,10 @@
 	"name": "${localWorkspaceFolder}-devcontainer",
 	"build": {
 		"dockerfile": "Dockerfile",
-		"target": "non-root"        //Use this on rootful Docker environments
-		// "target": "root"			//Use this on rootless Docker environments
+		"context": "../",
+		"target": "non-root" //Use this on rootless Docker environments
+		// "target": "root" //Use this on rootful Docker environments
 	},
-
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
@@ -16,7 +16,6 @@
 			]
 		}
 	},
-
 	"mounts": [
 		// default ssh keys and configs folder
 		{
@@ -31,7 +30,8 @@
 		// 	"type": "bind"
 		// }
 		// user gitconfig
-		,{
+		,
+		{
 			"source": "${localEnv:HOME}/.gitconfig",
 			"target": "/mnt/.gitconfig",
 			"type": "bind"
@@ -43,8 +43,7 @@
 		// 	"type": "bind"
 		// }
 	],
-
 	"workspaceMount": "source=${localWorkspaceFolder}/,target=/mnt/workspace/,type=bind",
 	"workspaceFolder": "/mnt/workspace",
-	"onCreateCommand": "/mnt/workspace/.devcontainer/symlink-container-mounts.sh"
+	"onCreateCommand": "/mnt/workspace/scripts/container/symlink_mounts.sh"
 }

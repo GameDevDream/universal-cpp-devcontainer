@@ -1,5 +1,9 @@
 {
     "editor.formatOnSave": true,
+    "cmake.configureOnOpen": false,
+    "[dockerfile]": {
+        "editor.formatOnSave": false
+    },
     "cmake.options.advanced": {
         "folder": {
             "projectStatusVisibility": "hidden"
